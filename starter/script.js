@@ -21,6 +21,8 @@ function processRegistration(event) {
   
   let users = registeredUsers + username + ":" + password + ";"
   localStorage.setItem("RegisteredUsers", users);
+
+  window.open("index.html", "_self");
 }
 
 function processLogin(event) {
